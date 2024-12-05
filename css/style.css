@@ -1,0 +1,489 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: "SF Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*margin: 20px;*/
+  /*margin-right: 20px;*/
+  background-color: #E3F5FC;
+  max-width: 1492px;
+  height: 100vh;
+}
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  /*min-width: 1452px;*/
+  /*max-width: 1492px; !* Adjust max-width as needed *!*/
+  margin: 0 ; /* Centers the container horizontally */
+  padding: 20px; /* Adds consistent space on the sides */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+  position: absolute;
+  top:0;
+  left: 50%;
+  transform:translate(-50%);
+}
+.nextProject{
+  display: flex;
+  gap: 20px;
+}
+img {
+  image-rendering: auto; /* Default, smooth scaling */
+}
+
+.projectSubstance{
+  margin-top: 144px;
+}
+
+html, body {
+  height: 100%; /* Ensures the page takes up the full viewport height */
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1; /* Expands to fill available space */
+}
+
+footer {
+  background-color: #E3F5FC;
+  width: 100%;
+  color: #062540;
+  padding: 20px 0;
+  text-align: left;
+  max-width: 1492px;
+  height: 20vh;
+  max-height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+footer h3{
+  color: #062540;
+  font-size: 20px;
+  margin: 20px;
+  font-weight: normal;
+}
+img{
+  border-radius: 10px;
+}
+
+p{
+  font-size: 24px;
+}
+
+h1{
+  font-size: 64px;
+  font-weight: bolder;
+}
+h2{
+  font-size: 48px;
+  font-weight: bold;
+}
+h3{
+  font-size: 32px;
+  font-weight: bold;
+}
+
+a{
+  text-decoration: none;
+  color: #0D0D0D;
+}
+
+.ProjectYear{
+  text-align: right;
+  font-weight: bold;
+}
+.ProjectInfo{
+  display: flex;
+  justify-content: space-between;
+}
+.workSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  max-width: 1492px;
+  gap: 20px;
+}
+
+.workThumbnail {
+  width: auto;
+  height:100%;
+  margin: 0 auto;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.work{
+  width: 726px;
+}
+.work p {
+   margin-top: 10px;
+   font-size: 24px;
+   color: #0D0D0D;
+ }
+.workImg{
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.workImg:hover{
+  transform: scale(1.05);
+  transition: all 0.4s ease-in-out;
+
+}
+
+
+.IntroText {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 144px;
+  margin-bottom: 48px;
+  color: #0D0D0D;
+}
+
+.IntroText h2 {
+  margin: 0; /* Removes any default margin */
+  padding-bottom: 5px; /* Adjusts space below the heading */
+  line-height: 2;
+}
+
+
+.introduction {
+  margin: 0; /* Removes default margin */
+  line-height: 1.2; /* Adjusts line spacing to bring lines closer together */
+  font-size: 32px;
+}
+
+.logo{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.logoImg{
+  width: 104px;
+  height: 104px;
+}
+
+.banner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1vh;
+  max-width: 1452px;
+}
+header.banner {
+  margin-top: 20px;
+  position: fixed; /* Makes the header fixed to the viewport */
+  top: 0; /* Positions it at the very top */
+  width: 100%; /* Makes the header span the entire width of the screen */
+  z-index: 1000; /* Ensures the header stays above other elements */
+  transition: transform 0.3s ease; /* Smooth transition for hiding */
+}
+
+.banner.hidden {
+  transform: translateY(-120%); /* Moves the banner out of view */
+}
+body {
+  padding-top: 80px; /* Adds space equal to the header's height to avoid overlap with content */
+}
+
+.mainNav a {
+  text-decoration: none;
+  color: #000; /* Set your desired text color */
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+
+.mainNav a {
+  display: inline-block;
+  width: 2px; /* Adjust based on your longest menu item */
+  text-align: center;
+  font-weight: 400; /* Regular weight */
+  transition: font-weight 0.2s; /* Smooth font-weight change */
+  margin-right: 120px;
+  font-size: 32px;
+}
+
+.mainNav a:hover {
+  font-weight: 700;
+  color: #000;
+  transform: scale(1.1); /* Slightly enlarges the text */
+}
+
+.contact{
+  font-size: 48px;
+  margin-left: 144px;
+}
+.contentAbout{
+  display: flex;
+  margin-top: 100px;
+  gap: 144px;
+  height: 854px;
+  width: auto;
+  overflow: clip;
+  justify-content: center;
+}
+.imgFrame{
+  height: auto;
+  width: 426px;
+  position: relative;
+  overflow: hidden;
+}
+.imgFrame img{
+  width:auto;
+  height: 716px;
+ }
+.bio{
+  position: relative;
+  height: auto;
+}
+.content{
+  display: flex;
+  gap: 20px;
+  grid-auto-columns: 1fr;
+}
+.content img{
+  margin-left: 144px;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Form Container */
+.form-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  align-self: center;
+  margin-left: 25%;
+}
+
+
+/* Form Title */
+.form-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+/* Form */
+.minimal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Form Group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 1rem;
+  color: #666666;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+/* Textarea */
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+/* Input/textarea Focus */
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+}
+
+/* Submit Button */
+.submit-button {
+  background-color: #062540;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+
+
+.heroImgProj{
+  /*display: flex;*/
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  /*align-items: center;*/
+  /*overflow: hidden;*/
+}
+
+.heroImgProj img{
+  height: auto;
+  align-items: center;
+}
+.section1, .section2 {
+  display: flex; /* Lays out the boxes horizontally */
+  gap: 20px; /* Adds space between the boxes */
+  justify-content: space-between; /* Ensures the boxes are spaced evenly */
+}
+
+.section1 > div, .section2 > div {
+  flex: 1; /* Makes each box take up equal space */
+  max-width: calc(50% - 10px); /* Ensures the boxes take half the space minus half the gap */
+  box-sizing: border-box; /* Ensures padding/borders don't increase the box size */
+}
+
+
+.targetUserGrid{
+  display: grid; /* Enables grid layout */
+  grid-template-columns: 1fr 6fr; /* Creates 2 equal-width columns */
+  grid-template-rows: 1fr 1fr; /* Creates 2 equal-height rows */
+  gap: 20px; /* Adds space between grid items */
+  width: 100%; /* Optional: Ensures the grid container takes full width */
+}
+
+.targetUser img{
+  width: 229px;
+  height: 229px;
+}
+
+.IA svg{
+  display: flex; /* Enable Flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 800px; /* Full viewport height */
+  width: 100%; /* Full viewport width */
+}
+
+.wireframeSmall {
+  display: grid; /* Enables grid layout */
+  grid-template-columns: 1fr 1fr; /* Creates 2 equal-width columns */
+  gap: 20px; /* Adds space between grid items */
+  width: 100%; /* Optional: Ensures the grid container takes full width */
+}
+
+.wireframeSmall img {
+  padding-left: 229px;
+  width: auto;
+  height: 496px;
+}
+
+.wireframe {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  flex-wrap: nowrap; /* Ensures items don't wrap */
+  align-items: center; /* Aligns items vertically */
+  overflow: hidden; /* Prevents overflow */
+}
+
+.wireframe img {
+  height: 496px;
+  width: auto;
+}
+
+.wireframe p {
+  max-width: calc(100% - 20px - 496px); /* Dynamically adjusts for img size and gap */
+  flex-shrink: 1; /* Allows paragraph to shrink if necessary */
+}
+
+.finalProduct{
+  display: flex;
+  gap: 20px;
+}
+
+.iframe-container {
+  width: 100%; /* Full width */
+  height: 100vh; /* Full viewport height */
+  background: #e3F5FC; /* Ensure container has a transparent background */
+  overflow: hidden; /* Prevent scrollbars */
+}
+
+.iframe-container iframe {
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  border: none; /* Remove borders */
+  background-color: #e3F5FC; /* Ensures iframe background is transparent */
+}
+
+.brainstorming{
+  display: flex;
+  gap: 20px;
+}
+.brainstorming img{
+  height: 496px;
+  width: auto;
+}
+section:last-of-type {
+  margin-bottom: 48px; /* Adds 48px space before the footer */
+}
+.titleProj{
+  margin-left: 144px;
+  line-height: 50px;
+}
+.titleProj h1{
+  font-size: 96px;
+  margin-bottom: 0px;
+}
+.titleProj h3{
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.workThumbnail, .animated-hero {
+  transition: all 0.8s ease-in-out; /* Smooth scaling and positioning */
+  will-change: transform, top, left, width, height; /* Optimize performance */
+}
+
+.animated-hero {
+  position: fixed;
+  z-index: 1000;
+  /*object-fit: cover;*/
+  transition: all 0.8s ease-in-out; /* Smooth sliding and scaling */
+  will-change: transform, top, left, width, height; /* Optimize for performance */
+}
+
+.heroImgProj img {
+  opacity: 1;
+  transition: opacity 4s ease-in-out;
+}
+
+.heroImgProj img.loaded {
+  opacity: 1;
+}
+
+
+
